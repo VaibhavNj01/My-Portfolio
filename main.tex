@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ATS readable PDF
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rakesh Chavan} \\ \vspace{1pt}
+    \small
+    9619176394 $|$
+    \href{mailto:rakesh.chavan776@gmail.com}{\underline{rakesh.chavan776@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/rakesh-chavan-05333622b/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/rakesh1602}{\underline{GitHub}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+Results-driven Software Engineer with 4 years of experience building scalable backend systems, cloud-native applications, and AI/ML-powered document processing pipelines. Proficient in Java, Spring Boot, Python, and AWS, with hands-on experience delivering high-throughput enterprise solutions in financial services and healthcare domains. Proven track record of optimizing system performance, leading cloud infrastructure deployments, and driving cross-team collaboration in Agile environments.
+}
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Associate Lead Developer}{July 2025 -- Present}
+    {Dexian India Pvt Ltd}{Client - Morningstar, Navi Mumbai, MH}
+ \resumeItemListStart
+    \resumeItem{Working on financial services platforms with a strong focus on performance, scalability, and system reliability in production environments.}
+    
+    \resumeItem{Designed and managed AWS infrastructure using ECS, EC2, Lambda, and Data Lake services to support large-scale document processing workflows.}
+    
+    \resumeItem{Developed and optimized Spring Boot APIs to ensure smooth data flow and seamless integration across multiple enterprise applications.}
+    
+    \resumeItem{Built and maintained Harness CI/CD pipelines to streamline deployments, improve release stability, and reduce manual operational effort.}
+\resumeItemListEnd
+
+\resumeSubheading
+    {Jr. Engineer -- Software Development}{Aug 2022 -- June 2025}
+    {CrossAsyst Infotech Pvt Ltd}{Navi Mumbai, MH}
+    \resumeItemListStart
+        \resumeItem{Built backend microservices using Java, Spring Boot, and Golang for enterprise healthcare applications.}
+        \resumeItem{Designed REST APIs and optimized Postgres queries for high-volume transaction and document processing systems.}
+        \resumeItem{Integrated third-party services and maintained seamless data flow across distributed systems.}
+        \resumeItem{Developed ReactJS front-end modules and managed code delivery using Git in Agile environments.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {DCGateway -- Financial Services}{} 
+    {Java, Python, Spring Boot, AWS, React}{}
+    \resumeItemListStart
+        \resumeItem{Built and optimized document processing APIs used by multiple financial service teams, capable of handling over 300K documents per hour — reducing bottlenecks and enabling teams to scale operations efficiently across the enterprise.}
+       \resumeItem{Deployed and maintained Python-based AI/ML document processing models on AWS EC2 and ECS, authored deployment scripts, provisioned supporting infrastructure, and improved system reliability to handle large-scale workloads with NO downtime.}
+       \resumeItem{Designed and implemented Apache Airflow DAGs to orchestrate asynchronous processing of large-scale document requests, improving pipeline efficiency and ensuring reliable end-to-end execution across distributed workflows.}
+       \resumeItem{Migrated document status and analytics dashboards from a legacy Python-based frontend to Vue3 following MDS standards, achieving a 95\% improvement in load performance and delivering a significantly faster, modern user experience across financial service teams.}
+        
+    \resumeItemListEnd
+
+\resumeSubheading
+    {EHR System -- Healthcare Project (USA)}{}
+    {Java, Spring Boot, React, AWS}{}
+    \resumeItemListStart
+        \resumeItem{Architected and delivered scalable backend microservices using Java and Golang, improving system speed, maintainability, and service reliability across a large-scale US healthcare platform.}
+        \resumeItem{Developed secure, standards-compliant REST APIs supporting end-to-end EHR workflows, including CCD/ECD document exchange and FHIR-based third-party integrations with external healthcare providers.}
+        \resumeItem{Optimized complex SQL queries to reduce API response times, and implemented comprehensive unit testing to ensure production stability and minimize regression risks.}
+        \resumeItem{Collaborated closely with product and QA teams throughout the SDLC to enforce HIPAA compliance, validate business requirements, and drive successful zero-defect production deployments.}
+    \resumeItemListEnd
+
+
+
+\resumeSubheading
+    {}{}
+    {}{}
+    \resumeItemListStart
+ 
+    \resumeItemListEnd
+
+
+
+    
+
+\resumeSubheading
+    {AWS Lex ChatBot}{}
+    {AWS Lex, Lambda (Java/Python), Spring Boot, Angular}{}
+    \resumeItemListStart
+        \resumeItem{Designed and deployed a conversational AWS Lex chatbot integrated with Lambda functions and Spring Boot APIs to handle real-time appointment scheduling, updates, and cancellations (CRUD operations).}
+        \resumeItem{Built an intuitive Angular-based frontend interface for the chatbot, reducing appointment task completion time from 8--10 minutes to under 1 minute — an 87\% efficiency improvement for end users.}
+        \resumeItem{Implemented end-to-end monitoring, structured logging, and usage tracking across Lambda and backend services to enhance system reliability, enable proactive issue detection, and improve operational visibility.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages:} Java, Python, SQL, Golang,  \\
+\textbf{Frameworks:} Spring Boot, React/Vue3 \\
+\textbf{Cloud \& DevOps:} AWS (CloudFormation, EC2, ECS, Elastic Load Balancer, SQS, SES, S3 Data Lake, Athena, IAM) \\
+\textbf{Developer Tools:} Git, Bitbucket, Jira \\
+\textbf{Messaging:} Kafka, SQS, Event-Driven Architecture
+}}
+\end{itemize}
+
+%-----------CERTIFICATIONS-----------
+
+\section{Certifications}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {AWS Certified Developer -- Associate}{}{}{}
+
+\resumeSubheading
+    {Full Stack Java Development -- IT Vedant Education Pvt Ltd}{}{}{}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Mumbai University}{Navi Mumbai, MH}
+    {Bachelor of Engineering}{Aug 2017 -- May 2020}
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+
+\section{Achievements}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Top Performer Award}{}{}{}
+    \resumeItemListStart
+        \resumeItem{Recognized for outstanding contributions, ownership, and consistent high performance across critical production projects.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\end{document}
